@@ -1,3 +1,43 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 24px;
+}
+body {
+  padding-top: 30px;
+  background: linear-gradient(2700deg, rgb(184, 147, 47), #c51609);
+  background-size: 500% 500%;
+  -webkit-animation: AnimatedBackground 30s ease infinite;
+  -moz-animation: AnimatedBackground 30s ease infinite;
+  animation: AnimatedBackground 30s ease infinite;
+}
+
+@-webkit-keyframes AnimatedBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimatedBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -6,4 +46,52 @@
 }
 .Words li {
   font-size: 20px;
+}
+
+@keyframes Spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.words{
+  width: 470px;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 18px;
+  background: repeating-linear-gradient(35deg, #ccffff, #ffcccc);
+}
+.mostrar{
+  width: 470px;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 18px;
+  background: repeating-linear-gradient(35deg, #ccffff, #ffcccc);
+
+
+}
+.input{
+  width: 270px;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  color: #ff2d96
+}
+.crear{
+  margin-left: 20px;
+  width: 200px;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 18px;
+  background: repeating-linear-gradient(35deg, #ccffff, #ffcccc);
+
+}
+
+.connect{
+  margin-top: 17px;
+  width: 310px;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 18px;
+  background: repeating-linear-gradient(35deg, #ccffff, #ffcccc);
+
 }
