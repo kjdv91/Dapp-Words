@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import { useState, useEffect } from 'react'
 import Words from './contract/Words.json'; 
 
-const contractAddress = '0x0AD4Da9bD8F76298009af7b19eEB905dD9fC5F2a';
+const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
 
 function App () {
 
