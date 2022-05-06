@@ -82,7 +82,7 @@ function App () {
         
     // función para escribir una nueva palabra en la blockchain, usando la función setWord() de nuestro smart contract
     async function newWord() {
-      if (!word  ) return alert("Ingresa una palabra Cripto no puede estar en blanco");
+      if (!word  ) return alert("Ingresa una palabra Cripto no puede estar en blanco"); //si no HAY UNA PALABRA QUE INGRESAR regresa está alerta
       
       if (typeof window.ethereum !== "undefined") { 
         const provider = new ethers.providers.Web3Provider(window.ethereum);
